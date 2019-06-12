@@ -17,7 +17,7 @@ export class CountdownTimerGetSetComponent implements OnInit, OnDestroy {
   }
   set seconds(v) {
     const vFixed = Number(v);
-    this._seconds = Number.isNaN(vFixed) ? 11 : 40;
+    this._seconds = Number.isNaN(vFixed) ? 11 : vFixed;
   }
 
   clearTimer() {
